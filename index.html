@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>CODIFICANDO</title>
+</head>
+<body>
+  <main>
+    <div class="logotipo-top">
+      <img src="imgs/logotipo-top.svg" class="logotipo-top-img">
+    </div>
+    <div class="box-principal">
+      <img src="imgs/icone.svg" class="icone-hacker">
+        <fieldset class="fieldset-form">
+
+          <div class="container">
+
+            <div class="div-mensagem">
+              <textarea id="mensagem" name="mensagem" class="design-campos" placeholder="Digite aqui sua mensagem"></textarea>
+            </div>
+
+            <div class="campo div-txt1">
+              <label for="metodo">Método</label>
+            </div>
+
+            <div class="div-metodo" id="container-metodo">
+              <select id="metodoCodigo" required class="design-campos">
+                <option selected disabled value="">Selecione</option>
+                <option value = "base64" >Base64</option>
+                <option value = "cesar" >Cifra de César</option>
+              </select>
+            </div>
+
+            <div class="div-n-cesar" id="selectNcesar">
+              <input type="number" id="nCesar" min="0" max="25" placeholder="Nº" class="design-campos">
+            </div>
+
+            <div class="div-botoes" id="selectBotoes">
+              <button class="botao codificar" type="submit" id="btnCodificar">CODIFICAR</button>
+              <button class="botao decodificar" type="submit" id="btnDecodificar">DECODIFICAR</button>
+            </div>
+
+          </div>
+
+        </fieldset>
+      <section class="container-resultado">
+        <div class="marcador-mensagem"><p>Mensagem:</p></div>
+        <div class="container-icone-coy">
+          <img src="imgs/icone-copy.svg" class="icone-copy">
+        </div>
+        <div id="mensagem-result"></div>
+      </section>
+    </div>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
+

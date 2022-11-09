@@ -1,0 +1,175 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #1A1D30;
+  background-image: url('../imgs/bg.jpg');
+  background-attachment: fixed; /*FIXAR NO FUNDO*/
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: auto 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+main{
+  justify-content: center;
+  text-align: center;
+  padding: 2.5vw;
+}
+
+.logotipo-top-img{
+  width: 15vw;
+  height: auto;
+  margin-bottom: 1.5vw;
+}
+
+.box-principal{
+  border: 2px #03FFB8 solid;
+  background-color: #141629;
+  width: 30vw;
+  padding: 12% 8% 12% 8%;
+}
+
+.icone-hacker{
+  width: 5vw;
+  height: auto;
+  margin-bottom: 12%;
+}
+
+.fieldset-form{
+  border: 0px;
+}
+
+.container{
+  display: grid;
+  gap: 16px 6px;
+  grid-template-areas: 
+    'mensagem mensagem mensagem mensagem'
+    'txt1 txt1 txt1 txt1'
+    'metodo metodo metodo n-cesar'
+    'botoes botoes botoes botoes';
+}
+
+.container div{
+  text-align: left;
+}
+
+.div-mensagem{
+  grid-area: mensagem;
+  height: 100px;
+}
+.div-txt1{
+  grid-area: txt1;
+  color: #fff;
+}
+.div-metodo{
+  grid-area: metodo;
+  height: 40px;
+}
+.div-n-cesar{
+  grid-area: n-cesar;
+}
+
+#selectNcesar{
+  display: none;
+}
+
+.div-botoes{
+  grid-area: botoes;
+  padding-top: 15px;
+}
+
+#selectBotoes{
+  display: none;
+}
+
+.design-campos{
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  background-color: #282942;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+  padding-left: 10px;
+}
+
+#mensagem{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+.botao{
+  padding: 1vw 1vw 1vw 1vw;
+  background-color: transparent;
+}
+
+.codificar{
+  background-color:#03FFB8;
+}
+
+.decodificar{
+  box-shadow:0px 0px 0px 1px #03FFB8 inset;
+  color: #03FFB8;
+}
+
+
+
+.container-resultado{
+  margin-top: 10%;
+  display: none;
+  width: 100%;
+  grid-template-areas:
+    'marcador-mensagem marcador-mensagem container-icone-coy'
+    'mensagem-result mensagem-result mensagem-result';
+  text-align: left;
+
+}
+
+
+.marcador-mensagem{
+  grid-area: marcador-mensagem;
+  color: #03FFB8;
+  text-align: left;
+
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.container-icone-coy{
+
+
+  grid-area: container-icone-coy;
+  height: 1.2rem;
+  text-align: right;
+
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.mensagem-result{
+  grid-area: mensagem-result;
+  height: auto;
+  width: 100%;
+  text-align: left;
+}
+
+.icone-copy{
+  height: 100%;
+}
+
+
+#mensagem-result P{
+  color: #fff;
+  margin-top: 12%;
+}
